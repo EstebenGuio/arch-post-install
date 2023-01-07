@@ -2,10 +2,10 @@
 
 ## Funcionalidades:
 
-### Actualizar y usar mejores mirros: 
+### Actualización keys
 
-    $   sudo pacman -Syy
-    $   sudo pacman -Scc
+    $   sudo pacman -Sy archlinux-keyring
+    $   sudo pacman -Syu
 
     
 ### configuraciones git 
