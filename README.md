@@ -25,9 +25,11 @@
 ### Instalar python (para usar pycritty)
 
     $   sudo pacman -S python-pip
-    $   pip install pycritty
+    $   pip install --install-option="--themes=all" pycritty
+    $   export PATH=$HOME/.local/bin:$PATH
 
-    Seguir las instrucciones [aquí](https://github.com/antoniosarosi/pycritty)
+Seguir las instrucciones en el link abajo
+[https://github.com/antoniosarosi/pycritty](https://github.com/antoniosarosi/pycritty)
 
 ### Instalar visual studio code
 
@@ -40,33 +42,33 @@
 
 ### Download fonts
     $   cd /usr/share/fonts
-    $   wget https://github.com/ryanoasis/nerd-fonts/releases/download/v2.2.2/3270.zip
-    $   wget https://github.com/ryanoasis/nerd-fonts/releases/download/v2.2.2/UbuntuMono.zip
-    $   wget https://github.com/ryanoasis/nerd-fonts/releases/download/v2.2.2/Mononoki.zip
-    $   wget https://github.com/ryanoasis/nerd-fonts/releases/download/v2.2.2/JetBrainsMono.zip
+    $   sudo su
+    $   rm -rf *
+    $   wget https://github.com/ryanoasis/nerd-fonts/releases/download/v2.2.2/3270.zip && wget https://github.com/ryanoasis/nerd-fonts/releases/download/v2.2.2/UbuntuMono.zip && wget https://github.com/ryanoasis/nerd-fonts/releases/download/v2.2.2/Mononoki.zip && wget https://github.com/ryanoasis/nerd-fonts/releases/download/v2.2.2/JetBrainsMono.zip
     $   unzip *.zip
 
 ### Download qtile configuration:
 
     Leer el repo antes de clonar
-    $   cd ~.
+    $   cd ~/.config
     $   rm -rf qtile
     $   git clone https://github.com/estebenguio/qtile
     
 
 ### Instalar nodejs
-    $   sudo pacman -S nodejs npm
+    $   sudo pacman -S nodejs npm # For latest version
+    $   sudo pacman -S nodejs-lts-gallium npm # For 16 version
+    $   sudo pacman -S 	nodejs-lts-hydrogen npm # for 18 version
 
 ### Instalar jdk
     $   sudo pacman -S jdk11-openjdk
 
 ### Instalar JetBrains
-    -   Ir a https://www.jetbrains.com/toolbox-app/
-    -   Descargar en formato tar.gz
-    $   cd ~/Downloads
+    $   wget https://download.jetbrains.com/toolbox/jetbrains-toolbox-1.27.2.13801.tar.gz
     $   tar -zxvf jetbrains-toolbox*.tar.gz
     $   cd jetbrains*
-    $   ./jetbrains*
+    $   .
+    /jetbrains*
     -   Manage your IDES from here
     
 ### Instalar brave
